@@ -15,6 +15,23 @@ display have a cover
 * forware skip
 * backward skip
 
+### Wiring
+![Demo Image](image/wiring.png)
+connect this way 
+| display | esp32 |
+|-------------|---------|
+|CS|GPIO-1|
+|RST|GPIO-2|
+|DC/AO|GPIO-3|
+|SCK|GPIO-4|
+SDA/MOSI|GPIO-5|
+
+|KEY|ESP32|
+|----------|-------|
+|KEY-1|GPIO-6|
+|KEY-2|GPIO-7|
+|KEY-3|GPIO-8|
+
 ### software I used
 * Fusion 360 (for cad desgin)
 * VS-code (for programing)

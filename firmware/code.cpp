@@ -1,9 +1,9 @@
 #include <Arduino.h>
 #include <ArduinoJson.h>
 #include <Adfruit_ST7735.h>
-#include <adfuit_gfx.h>
+#include <Adafruit_GFX.h>
 #include <SPI.h>
-#include <wifi.h>
+#include <WiFi.h>
 #include <spotify.h>
 
 #define TFT_CS 1
@@ -11,6 +11,9 @@
 #define TFT_DC 3
 #define TFT_SCLK 4
 #define TFT_MOSI 5
+#define BTN_BACK    8
+#define BTN_PP      7
+#define BTN_FWD     6
 
 char* SSID = "our_wifi_ssid";
 char* PASSWORD = "our_wifi_password";
@@ -44,6 +47,12 @@ void setup(){
         sp.handle_client();
     }
     Serial.println("Authenticated with Spotify!!!");
+
+
+// In setup():
+pinMode(BTN_BACK, INPUT_PULLUP);
+pinMode(BTN_PP,   INPUT_PULLUP);
+pinMode(BTN_FWD,  INPUT_PULLUP);
 }
 
 void loop()
