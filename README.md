@@ -7,9 +7,9 @@
 
 ![Demo Image](image/1.png)
 ![Demo Image](image/2.png)
-esp32 have slider
 ![Demo Image](image/3.png)
-display have a cover 
+
+esp32 have slider and display have a cover 
 ### Features
 * play/puse
 * forware skip
